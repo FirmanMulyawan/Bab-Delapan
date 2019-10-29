@@ -1,16 +1,16 @@
-var a, b, c,
+var a, b, c, hasil,
     input = document.getElementById("input"),
     btn = document.getElementById("btn"),
     result = document.getElementById("result");
 
 btn.addEventListener("click", function () {
     a = Number(input.value);
-    b = 0;
-    c = [];
-    while (b < a) {
-        c = ((b * 2) - 1);
-        b++;
+    hasil = "";
+    for (i = 0; i < a; i++) {
+        if (i % 2 !== 0) {
+            hasil = hasil + i + "</br>";
+        }
     }
 
-    result.innerHTML = c;
+    result.innerHTML = hasil;
 });
