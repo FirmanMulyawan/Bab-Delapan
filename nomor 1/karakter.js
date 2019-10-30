@@ -1,15 +1,16 @@
-var a, b, c,
+var a, hasil,
   input = document.getElementById("input"),
   btn = document.getElementById("btn"),
   result = document.getElementById("result");
 
 btn.addEventListener("click", function () {
   a = input.value;
-  b = 1;
-  while (b <= a) {
-    c = document.write(" s ");
-    b++;
+  hasil = "";
+  var nx = 0;
+  for (i = 0; i < a; i++) {
+    hasil = prompt("Ketikkan Huruf:");
+    document.write("Karakter " + nx + " : " + hasil + "<br><br>");
+    nx++;
+    a++;
   }
-
-  result.innerHTML = c;
 });
